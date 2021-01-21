@@ -40,8 +40,15 @@ public class GameOfLife : MonoBehaviour
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		if(nextTick > tick)
+	void Update ()
+	{
+
+		/*if (Input.GetKey("escape"))
+		{
+			Application.Quit();
+		}*/
+
+		if (nextTick > tick)
 		{
 			CheckAliveCells();
 			CheckRules();
@@ -52,7 +59,7 @@ public class GameOfLife : MonoBehaviour
 		nextTick += Time.deltaTime;
 	}
 
-	void CheckAliveCells()
+void CheckAliveCells()
 	{
 		// Kollar antal levande på varje rad
 		for (int y = 0; y < gridY; ++y)
