@@ -7,11 +7,6 @@ public class Cell : MonoBehaviour {
 	public bool alive = false;
 	public int numberLivingNeighbours;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-
 	public void SetState ()
 	{
 		if (alive)
