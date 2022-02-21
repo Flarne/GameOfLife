@@ -123,7 +123,7 @@ void CheckAliveCells()
 		{
 			return false;
 		}
-		// Kollar om cellen har 3 eller mer grannar dvs död pga överbefolkning
+		// Kollar om cellen har mer än 3 grannar dvs död pga överbefolkning
 		else if (cells[x, y].numberLivingNeighbours > 3)
 		{
 			return false;
