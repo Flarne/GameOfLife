@@ -62,10 +62,10 @@ public class GameOfLife : MonoBehaviour
 void CheckAliveCells()
 	{
 		// Kollar antal levande på varje rad
-		for (int y = 0; y < gridY; ++y)
+		for (int y = 0; y < gridY; y++)
 		{
 			// Kollar antal levande i varje kolumn på varje rad
-			for (int x = 0; x < gridX; ++x)
+			for (int x = 0; x < gridX; x++)
 			{
 				cells[x, y].numberLivingNeighbours = CheckNeighbour(x, y);
 			}
